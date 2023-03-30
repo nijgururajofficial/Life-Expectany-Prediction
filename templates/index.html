@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Expectancy Prediction Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<h1>Life Expectancy Prediction Form</h1>
+	<form action="result" method="post">
+		<label for="adult_mortality">Adult Mortality:</label>
+		<input type="number" placeholder="0" id="adult_mortality" name="adult_mortality" required><br>
+
+		<label for="alcohol">Alcohol:</label>
+		<input type="number" placeholder="0.0" step="0.01" id="alcohol" name="alcohol" required><br>
+
+		<label for="percentage_expenditure">Percentage Expenditure:</label>
+		<input type="number" step="any" id="percentage_expenditure" name="percentage_expenditure" placeholder="00" required><br>
+
+		<label for="hepatitis_b">Hepatitis B:</label>
+		<input type="number" placeholder="0" id="hepatitis_b" name="hepatitis_b" required><br>
+
+		<label for="measles">Measles:</label>
+		<input type="number" id="measles" placeholder="00" name="measles" required><br>
+
+		<label for="bmi">BMI:</label>
+		<input type="number" placeholder="0.0" step="0.01" id="bmi" name="bmi" required><br>
+
+		<label for="under_five_deaths">Under-five Deaths:</label>
+		<input type="number" placeholder="0" id="under_five_deaths" name="under_five_deaths" required><br>
+
+		<label for="polio">Polio:</label>
+		<input type="number" placeholder="0" id="polio" name="polio" required><br>
+
+		<label for="total_expenditure">Total Expenditure:</label>
+		<input type="number" placeholder="0.0" step="0.01" id="total_expenditure" name="total_expenditure" required><br>
+
+		<label for="hiv_aids">HIV/AIDS:</label>
+		<input type="number" placeholder="0.0" steps="0.01" id="hiv_aids" name="hiv_aids" required><br>
+
+		<label for="gdp">GDP:</label>
+		<input type="number" placeholder="0.000" step="any" id="gdp" name="gdp" required><br>
+
+		<label for="population">Population:</label>
+		<input type="number" placeholder="0" id="population" name="population" required><br>
+
+		<label for="thinness_1_19_years">Thinness 1-19 years:</label>
+		<input type="number" placeholder="00" step="0.01" id="thinness_1_19_years" name="thinness_1_19_years" required><br>
+
+		<label for="thinness_5_9_years">Thinness 5-9 years:</label>
+		<input type="number" placeholder="0.0" step="0.01" id="thinness_5_9_years" name="thinness_5_9_years" required><br>
+
+		<label for="income_composition">Income Composition of Resources:</label>
+		<input type="number" placeholder="0.000" step="0.0001" id="income_composition" name="income_composition" required><br>
+
+		<label for="schooling">Schooling:</label>
+		<input type="number" placeholder="0" step="0.01" id="schooling" name="schooling" required><br>
+
+		<label for="developed">Developed:</label>
+		<select name="developed" id="developed">
+            <option value="1">Developed</option>
+            <option value="0">Developing</option>
+        </select>
+		<br>
+
+		<input type="submit" value="Predict">
+	</form>
+</body>
+</html>
