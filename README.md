@@ -27,3 +27,9 @@ pip install -r requirements.txt
 
 <h2>📋 Conclusion </h2>
 This project is focused on predicting the life expectancy of different countries based on various input features. It involves the use of various tools such as Jupyter Notebook, Python, Scikit-learn, Numpy, Pandas, Seaborn, and Matplotlib. By following the steps outlined in the project, we can create an accurate machine learning model that can predict life expectancy values for different countries.
+
+<h2>🧑🏻‍💻 Contributers</h2>
+<ul> 
+<li><a href="https://github.com/nijgururajofficial"> Nijgururaj Ashtagi</a>
+<li><a href="https://github.com/VaishnaviPatange04"> Vaishnavi Patange</a>
+</ul>
